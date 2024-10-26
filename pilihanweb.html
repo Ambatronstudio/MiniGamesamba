@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pilih Mode Website</title>
+    <link rel="stylesheet" href="tampilan.css">
+</head>
+<body class="badan">
+    <div class="container">
+        <div class="header">
+            <h1 class="judul">Pilih Mode Website</h1>
+            <p class="deskripsi">Silakan pilih mode tampilan website yang Anda inginkan:</p>
+            <button onclick="pilihMode('potato')">Mode Potato</button>
+            <button onclick="pilihMode('default')">Mode Default</button>
+        </div>
+    </div>
+
+    <script>
+        function pilihMode(mode) {
+            if (mode === 'potato') {
+                window.location.href = 'allgamepotato/halaman.html';
+            } else if (mode === 'default') {
+                window.location.href = 'allgame/index.html';
+            }
+        }
+    </script>
+    
+    <footer>
+        <p>&copy; 2024 AMBATRON STUDIO. Game yang disini hanyalah untuk hiburan.</p>
+    </footer>
+</body>
+</html>
