@@ -43,10 +43,7 @@ async function sendMessage(message) {
 
 // Fungsi untuk mendapatkan respon dari chat AI menggunakan API
 async function getResponse(message) {
-    const apiKey = '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'; // Ganti dengan API Key Anda
-    const apiUrl = 'https://api.openai.com/v1/chat/completions'; // URL API
-
-    const response = await fetch(apiUrl, {
+    const apiKey = 's
         method: 'POST',
         headers: {
             'Content-Type': 'application/json',
